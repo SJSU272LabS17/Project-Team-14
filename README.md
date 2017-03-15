@@ -2,22 +2,8 @@
 
 Abstract 1:
 
-TUX: AN AUTOMATED APPROACH TO 360° BEHAVIOR MODELING
-
-Abstract: The aim of our project is to create an IOT based virtual behavior analyzing software agent  “TUX” which will be installed on your mobile/ smart watch. TUX will use various machine learning algorithms to read,analyze and understand the behavior of an individual using various services as an input such as location service (GPS), calender service, messaging and chat service, buying and selling pattern, search info etc. The output produced by TUX will be behavior based suggestions , reminders, plans, buying and selling capability and many more. TUX will have the capability to provide output in both text and voice form.
-
-The project can be divided in five phases as listed below,but we will be implementing ONLY first two phase under this project due to the time constraints and remaining phases will work as a scope of further improvement.
-
-Phase 1: Using Locations services to analyze your moving pattern and help you navigate at anywhere in the world.
-
-Phase 2: Using Calender services to help you plan your day before it start.  
-
-Phase 3: Using you messaging/chat services to analyze your mood and forecast the your weekend plans.
-
-Phase 4: Using your buying and selling pattern to recommend similar available products with discounts and promotional offers.
-
-Phase 5: using your search,voice communication data to do something amazing which is never heard of.
-
+Gourmet
+As food is the basic need and with changing times it is taking the form of art so in this project we want to use machine learning to approach food and specifically recipes in new ways. For this we will classify the cuisine in categories and taking input from user what all ingredients user have at the moment and our algorithm will give options to the users what all user can cook and what cuisine it belongs to if not selected already. Also, we will include features like what all are the nutrient contents of the selected recipe and calories intake etc. and recommend what all user can also cook if they have missing ingredients, basically in order to give more options if user can arrange few additional ingredients.
 
 
 
