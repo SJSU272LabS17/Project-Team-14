@@ -12,7 +12,7 @@ As food is the basic need and with changing times it is taking the form of art s
 Abstract 2:
 
 
-MTrack:
+MTrack: APPROVED
 
 In this project, we are planning to perform a user based analysis of trends in the music industry. Using this project, we plan to suggest songs to our audience as per their choice. Record labels can also utilize this to suggest songs on the basis of audience preference and may conduct a market research on same. For example, a recording executive can observe our compilation of song tempos across different eras and use that to assess whether there is a correlation between song tempo and popularity. Answering such questions would give record labels a better understanding of what kinds of music will sell.The analysis is performed on song data from few datasets.
 
