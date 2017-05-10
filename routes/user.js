@@ -2,6 +2,7 @@
 var mongoose = require('mongoose');
 login = require('../model/login_schema');
 mongoose.connect('mongodb://127.0.0.1:27017/login');
+var global_login = false;
 
 exports.homepage = function(req, res){
 	  res.render('homepage.ejs', '');
@@ -65,6 +66,7 @@ exports.signup = function(req, res){
 			response = {"status": "bad", "message": "Error"};
 		}
 		else{
+				global_login = true;
 				response = {"status": "ok", "message": "Logged in successfully"};
 		}
 		res.render('register.ejs', 'Registered successfully');
