@@ -2,7 +2,8 @@
 var mongoose = require('mongoose');
 login = require('../model/login_schema');
 mongoose.connect('mongodb://127.0.0.1:27017/login');
-var global_login = false;
+global._ = require('global');
+global.global_login = false;
 
 exports.homepage = function(req, res){
 	  res.render('homepage.ejs', '');
@@ -38,6 +39,7 @@ exports.signin = function(req, res){
 	        	if(password == user[0].password)
 	        	{ 
 		        	response = {"error" : false, "message": user };
+		        	global_login = true;
 		        	res.render('homepage.ejs', emailid);
 	        	}
 	        	else{
@@ -66,7 +68,7 @@ exports.signup = function(req, res){
 			response = {"status": "bad", "message": "Error"};
 		}
 		else{
-				global_login = true;
+				
 				response = {"status": "ok", "message": "Logged in successfully"};
 		}
 		res.render('register.ejs', 'Registered successfully');

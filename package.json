@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.2.6",
     "ejs": "*",
+    "global": "4.3.2",
     "mongoose": "4.9.8"
   }
 }
