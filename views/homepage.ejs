@@ -12,6 +12,67 @@
     <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script  type="text/javascript" src="js/typeahead.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+    $('input.typeahead').typeahead({
+        name: 'countries',
+        remote: 'http://52.89.209.159:8080/search?key=%QUERY',
+        limit: 10
+    });
+    });
+ </script>
+ <style type="text/css">
+.bs-example{
+	font-family: sans-serif;
+	position: relative;
+	margin: 50px;
+}
+.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC;
+	border-radius: 8px;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 12px;
+	width: 396px;
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+</style>
   </head>
   <body>
     <!--banner-->
@@ -21,13 +82,12 @@
             <div class="container">
                 <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-               	  
+                  <!--a href="#about">About</a-->
                   <form action="/login" method="get">
-                  	<button type="submit" class="btn btn-lg">Login</button>
-              
+                  	<button type="submit" class="btn btn-lg">Login</button>              
                   </form>
-                 
-                  <a href="#contact">Help</a>
+                  <!--a href="#menu-list">More Recipes</a-->
+                  <!--a href="#contact">Help</a-->
                 </div>
                 <!-- Use any element to open the sidenav -->
                 <span onclick="openNav()" class="pull-right menu-icon">☰</span>
@@ -39,6 +99,7 @@
             <h1 class="logo-name">Gourmet Recipe</h1>
             <h2>Food To fit your choice & health...</h2>
             <p>Search your ingredient</p>
+			<div class="bs-example">
 				      <form id="uploadIngredients"
           action="/postIng"
           method="post">
@@ -46,7 +107,7 @@
             <input type="submit" value="Submit" id ="Submit">
 
                      </form>
-			
+			<div>
           </div>
         </div>
         </div>
@@ -99,7 +160,7 @@
                             <h2>Joyful eating</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
                             
-                            <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                            <!--a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a-->
                           </div>
                         </div>
                       </div>
@@ -117,7 +178,7 @@
                 <div class="col-md-offset-3 col-md-6 text-center">
                     <div class="widget">
                         <h4 class="widget-title">Gourmet Recipes...</h4>
-						<h4 class="widget-title">Contacts:</h4>
+						<h3 class="widget-title">Contacts:</h3>
 						<div>
 						<a class="menu-title" href="#" data-meal-img="/img/restaurant/rib.jpg">Deepika Kalani : +1(408)480-7643</a>
 						<a class="menu-title" href="#" data-meal-img="/img/restaurant/rib.jpg">Kanika Gupta   : +1(650)495-9748</a>
@@ -143,12 +204,13 @@
     </footer>
     <!-- / footer -->
     
-    <script src="js/jquery.min.js"></script>
+    <!--script src="js/jquery.min.js"></script-->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
+	<script src="js/typeahead.min.js"></script>
+    <!--script src="contactform/contactform.js"></script-->
     
 </body>
 </html>
