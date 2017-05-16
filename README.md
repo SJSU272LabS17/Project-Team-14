@@ -12,6 +12,9 @@ Keywords— Recommendation Engine, Machine Learning, API, AWs, Clustering,
 Link to our Project:
 http://34.208.105.157:8080/homepage
 
+PPT:
+https://github.com/SJSU272LabS17/Project-Team-14/blob/master/Team14-cmpe272.pdf
+
 
 Members:
 1. Deepika Kalani
