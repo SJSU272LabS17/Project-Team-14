@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gourmet Recipe</title>
+
+    <meta name="description" content="Select your ingredient">
+    <meta name="keywords" content="">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <!--banner-->
+    <section id="banner">
+      <div class="bg-color">
+        <header id="header">
+            <div class="container">
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               	  
+                  <form action="/login" method="get">
+                  	<button type="submit" class="btn btn-lg">Login</button>
+              
+                  </form>
+                 
+                  <a href="#contact">Help</a>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span onclick="openNav()" class="pull-right menu-icon">☰</span>
+            </div>
+        </header>
+        <div class="container">
+        <div class="row">
+          <div class="inner text-center">
+            <h1 class="logo-name">Gourmet Recipe</h1>
+            <h2>Food To fit your choice & health...</h2>
+            <p>Search your ingredient</p>
+				      <form id="uploadIngredients"
+          action="/postIng"
+          method="post">
+        <input type="text" name="typeahead" id="typeahead" class="typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="Search for your recipe....">
+            <input type="submit" value="Submit" id ="Submit">
+
+                     </form>
+			
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- / banner -->
+    <!--about-->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center marb-35">
+                    <h1 class="header-h">Gourmet Recipe</h1>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="about-info">
+                            <h2 class="heading">vel illum qui dolorem eum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates quibusdam dicta!</p>
+                            <div class="details-list">
+                            </div>
+                        </div>
+                    </div>
+					
+                    <div class="col-md-6 col-sm-6">
+                        <img src="/img/res01.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </section>
+    <!--/about-->
+    <!-- event -->
+    <section id="event">
+        <div class="bg-color" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center" style="padding:60px;">
+                      <h1 class="header-h">Recipes of your choice... </h1>
+                   
+                    </div>
+                    <div class="col-md-12" style="padding-bottom:60px;">
+                        <div class="item active left">
+                          <div class="col-md-6 col-sm-6 left-images">
+                           <img src="/img/res02.jpg" class="img-responsive">
+                         </div>
+                         <div class="col-md-6 col-sm-6 details-text">
+                          <div class="content-holder">
+                            <h2>Joyful eating</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
+                            
+                            <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ event -->
+   
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <div class="widget">
+                        <h4 class="widget-title">Gourmet Recipes...</h4>
+						<h4 class="widget-title">Contacts:</h4>
+						<div>
+						<a class="menu-title" href="#" data-meal-img="/img/restaurant/rib.jpg">Deepika Kalani : +1(408)480-7643</a>
+						<a class="menu-title" href="#" data-meal-img="/img/restaurant/rib.jpg">Kanika Gupta   : +1(650)495-9748</a>
+						</div>
+						<div>
+						<a class="menu-title" href="#" data-meal-img="/img/restaurant/rib.jpg">Swati Gupta    : +1(602)576-7971</a>
+						<a class="menu-title" href="#" data-meal-img="/img/restaurant/rib.jpg">Sunil Tiwari   : +1(669)213-7162</a>
+						</div>
+                        
+                        <div class="social-list">
+                            <a href="https://twitter.com/SatisfyingTaste"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/food.recipes.videos/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <p class="copyright clear-float">
+                           
+                            <div class="credits">                                
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / footer -->
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    
+</body>
+</html>

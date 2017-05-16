@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+   <script>
+function DisplayData()
+{
+var responseData= concatinatedDish;
+var datasplit = responseData=.split('DISH NAME:')
+document.getElementById("demo1").innerHTML = datasplit[1];
+console.log(datasplit[1]);
+}
+   </Script>
+    </head>
+  <body onload="DisplayData()">
+  <!--  <div><i><%= concatinatedDish %><i></div> -->
+
+<p id="demo1"></p>
+  </body>
+</html>
+

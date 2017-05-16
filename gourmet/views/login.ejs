@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Gourmet</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+	<section id="banner">
+		<div class="bg-color">
+			<div class="container">
+	
+			<div class="col-sm-6 col-sm-offset-3">
+				
+	    		<h1><span class="fa fa-sign-in"></span> Login</h1>
+	    		<!-- LOGIN FORM -->
+	    		<p><% var message; 
+				message %></p>
+	    		<form action="/signin" method="post">
+	        		<div class="form-group">
+			            <label>Email</label>
+			            <b><font color="red"><input type="text" class="form-control" name="email" class = "typeahead tt-query" style="background-color:white; border: 
+    solid 1px #6E6E6E; height: 30px; font-size:18px; 
+    vertical-align:9px"/></font></b>
+	        		</div>
+			        <div class="form-group">
+			            <label>Password</label>
+			            <input type="password" class="form-control" name="password" style="background-color:white; border: 
+    solid 1px #6E6E6E; height: 30px; font-size:18px; 
+    vertical-align:9px"/>
+			        </div>
+	        		<button type="submit" class="btn btn-warning btn-lg">Login</button>
+	   			</form>
+			    
+			    <form action="/register" method="get">
+			    	<p>Not yet registered!<p><button type="submit" class="btn btn-lg">Register</button>
+			    </form>
+	    		<hr>
+	
+			</div>
+	
+			</div>
+		</div>
+	</section>
+</body>
+</html>
